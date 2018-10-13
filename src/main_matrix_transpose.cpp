@@ -27,7 +27,7 @@ int main(int argc, char **argv) {
 
     FastRandom r(M + K);
     for (unsigned int i = 0; i < as.size(); ++i) {
-        as[i] = int(abs(r.nextf())) % 10;
+        as[i] = r.nextf();
     }
     std::cout << "Data generated for M=" << M << ", K=" << K << "!" << std::endl;
 
