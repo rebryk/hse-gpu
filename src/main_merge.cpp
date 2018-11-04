@@ -42,7 +42,7 @@ int main(int argc, char **argv) {
     std::vector<float> cpu_sorted;
     {
         timer t;
-        for (int iter = 0; iter < 1; ++iter) {
+        for (int iter = 0; iter < benchmarkingIters; ++iter) {
             cpu_sorted = as;
             std::sort(cpu_sorted.begin(), cpu_sorted.end());
             t.nextLap();
